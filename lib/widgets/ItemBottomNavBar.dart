@@ -9,7 +9,7 @@ class ItemBottomNavBar extends StatelessWidget {
     return BottomAppBar(
       child: Container(
         height: 70,
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
@@ -18,14 +18,14 @@ class ItemBottomNavBar extends StatelessWidget {
               color: Colors.grey.withOpacity(0.5),
               spreadRadius: 3,
               blurRadius: 10,
-              offset: Offset(0, 3),
+              offset: const Offset(0, 3),
             ),
           ],
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
+            const Text(
               "\$120",
               style: TextStyle(
                 fontSize: 25,
@@ -35,8 +35,8 @@ class ItemBottomNavBar extends StatelessWidget {
             ),
             ElevatedButton.icon(
                 onPressed: (){},
-                icon: Icon(CupertinoIcons.cart_badge_plus),
-                label: Text(
+                icon: const Icon(CupertinoIcons.cart_badge_plus),
+                label: const Text(
                   "Add to Cart",
                   style: TextStyle(
                     fontSize: 16,
@@ -46,7 +46,7 @@ class ItemBottomNavBar extends StatelessWidget {
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(Color(0xFF4C53A5)),
                 padding: MaterialStateProperty.all(
-                  EdgeInsets.symmetric(vertical: 13, horizontal: 15),
+                  const EdgeInsets.symmetric(vertical: 13, horizontal: 15),
                 ),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
